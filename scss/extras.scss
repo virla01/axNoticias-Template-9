@@ -264,9 +264,8 @@ a.whatsapp {
 
 .tar-news {
     display: block;
-    font-family: 'prata', helvetica neue, Helvetica, Arial, sans-serif;
     background-color: #FFF;
-    padding: 0 10px;
+    padding: 0;
     position: relative;
     &:after {
         content: "";
@@ -275,7 +274,7 @@ a.whatsapp {
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         position: absolute;
         height: 5px;
-        bottom: 0px;
+        bottom: -20px;
     }
     & .cont-section {
         position: relative;
@@ -287,7 +286,7 @@ a.whatsapp {
             display: inline-block;
             position: absolute;
             left: 0;
-            top: 12px;
+            top: 10px;
             width: 100%;
             height: 2px;
             z-index: 0;
@@ -308,14 +307,13 @@ a.whatsapp {
         font-size: 20px;
         font-weight: 400;
         line-height: 26px;
-        margin-top: 10px;
+        margin: 15px 0;
         text-align: center;
     }
     & p.copete {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: 10px;
+        margin: 15px 0;
     }
     &.animado {
         /*opacity: 0;*/
@@ -343,7 +341,6 @@ a.whatsapp {
             float: right;
             & h2.title {
                 display: block;
-                font-family: 'Roboto Condensed', sans-serif;
                 font-size: 20px;
                 line-height: 24px;
                 font-weight: 600;
@@ -351,7 +348,6 @@ a.whatsapp {
             }
             & span.section-list {
                 display: block;
-                font-family: "lato";
                 font-size: 12px;
                 font-weight: 300;
                 text-transform: uppercase;
@@ -386,11 +382,10 @@ a.whatsapp {
 .news-text-list {
     display: flex;
     list-style: none;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
     flex-direction: column;
     & .news-text-item {
-        font-family: 'Roboto Condensed', sans-serif;
         font-size: 18px;
         line-height: 22px;
         font-weight: 700;
@@ -452,7 +447,6 @@ h5.tituloSeccion {
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    margin-bottom: 14px;
     & img.news-banner-img {
         object-fit: cover;
         height: 215px;
@@ -469,14 +463,19 @@ h5.tituloSeccion {
 
 h3.news-caja-title {
     display: block;
+    width: 100%;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
     color: #FFF;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 10px;
+    margin: 0;
     bottom: 0px;
     position: absolute;
+    & a {
+        color: #FFF!important;
+    }
     & span.news-banner-section-title {
         display: block;
         width: 80px;
@@ -490,7 +489,7 @@ h3.news-caja-title {
 }
 
 h3.title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
